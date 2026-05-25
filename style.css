@@ -1,3 +1,4 @@
+/* --- ESTILOS GENERALES --- */
 *{
     margin:0;
     padding:0;
@@ -5,112 +6,99 @@
 }
 
 body{
-    background:#081420;
+    /* FONDO DE IMAGEN CON SUPERPOSICIÓN PARA LEGIBILIDAD */
+    background-image: linear-gradient(rgba(8, 20, 32, 0.9), rgba(8, 20, 32, 0.9)), url('robot.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    
     font-family:'Poppins',sans-serif;
     color:white;
 }
 
-/* HEADER */
-
+/* --- HEADER --- */
 header{
-    padding:20px 8%;
-    background:#02101d;
+    padding:40px 8%;
     border-bottom:2px solid #00d9ff;
+    text-align: left;
 }
 
-.header-box{
-    display:flex;
-    align-items:center;
-    gap:20px;
+header h1 {
+    font-size: 3rem;
+    color: #00d9ff;
 }
 
-.logo{
-    width:80px;
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
-/* HERO */
-
-.hero{
-    height:70vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
 }
 
-.hero-content h1{
-    font-size:6rem;
-    color:#00d9ff;
-}
-
-.hero-content p{
-    font-size:1.5rem;
-    margin-top:20px;
-}
-
-/* ROBOT */
-
-.robot-section{
-    padding:80px 8%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    gap:50px;
-
-    flex-wrap:wrap;
-}
-
-.robot-img{
-    width:420px;
-
-    border-radius:20px;
-
-    border:3px solid #00d9ff;
-}
-
-.robot-text{
-    max-width:500px;
-    line-height:1.8;
-}
-
-/* TITULOS */
-
+/* --- TÍTULOS --- */
 .titulo{
     text-align:center;
     font-size:3rem;
     margin-bottom:50px;
     color:#00d9ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* CARDS */
+/* --- SECCIÓN DE DESCRIPCIÓN TÉCNICA --- */
+.info {
+    padding: 80px 8%;
+}
 
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.info-card {
+    background:rgba(13, 29, 47, 0.8); /* Fondo semitransparente */
+    border:2px solid #00d9ff;
+    border-radius:20px;
+    padding: 30px;
+    width: 300px;
+}
+
+.info-card h4 {
+    color: #00d9ff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #00d9ff;
+    padding-bottom: 10px;
+}
+
+.info-card ul,
+.info-card ol {
+    list-style-position: inside;
+    line-height: 1.6;
+}
+
+/* --- SECCIÓN DE GALERÍA (CARDS) --- */
 .cards-section{
     padding:80px 8%;
 }
 
 .cards{
     display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(260px,1fr));
-
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
 }
 
 .card{
     background:#0d1d2f;
-
     border-radius:20px;
-
     overflow:hidden;
-
     border:2px solid #00d9ff;
-
     transition:0.4s;
+    text-align: center;
 }
 
 .card:hover{
@@ -119,50 +107,15 @@ header{
 
 .card img{
     width:100%;
-    height:220px;
-    object-fit:cover;
+    height:250px;
+    object-fit:cover; /* Recorta la imagen para llenar el espacio sin deformarse */
 }
 
 .card h3{
-    text-align:center;
     padding:20px;
 }
 
-/* EQUIPO */
-
-.equipo{
-    padding:80px 8%;
-    text-align:center;
-}
-
-.equipo-box{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.persona{
-    background:#0d1d2f;
-
-    padding:20px 30px;
-
-    border-radius:15px;
-
-    border:2px solid #00d9ff;
-}
-
-.foto-equipo{
-    width:40%;
-    margin-top:50px;
-
-    border-radius:20px;
-
-    border:3px solid #00d9ff;
-}
-
-/* REDES */
-
+/* --- SECCIÓN DE REDES SOCIALES --- */
 .redes{
     padding:80px 8%;
     text-align:center;
@@ -173,26 +126,21 @@ header{
     justify-content:center;
     gap:40px;
     flex-wrap:wrap;
+    margin-top: 30px;
 }
 
 .instagram,
 .tiktok{
     width:300px;
-    height:120px;
-
+    height:100px;
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-decoration:none;
-
     color:white;
-
     font-size:2rem;
     font-weight:bold;
-
     border-radius:20px;
-
     transition:0.4s;
 }
 
@@ -207,4 +155,70 @@ header{
 .instagram:hover,
 .tiktok:hover{
     transform:scale(1.05);
+}
+
+/* --- SECCIÓN DE EQUIPO Y DOCENTES (AL FINAL) --- */
+.equipo {
+    padding: 80px 8%;
+}
+
+.equipo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.equipo-listado {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sub-titulo-equipo {
+    color: #00d9ff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #00d9ff;
+    padding-bottom: 10px;
+}
+
+.equipo-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.persona{
+    background:#0d1d2f;
+    padding:20px 30px;
+    border-radius:15px;
+    border:2px solid #00d9ff;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.persona h4 {
+    color: #00d9ff;
+    margin-bottom: 5px;
+}
+
+/* FOTO DEL EQUIPO (GRANDE) */
+.foto-equipo-container {
+    flex: 1;
+    min-width: 400px;
+}
+
+.foto-equipo {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #00d9ff;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #00d9ff;
+    background: #02101d;
 }
