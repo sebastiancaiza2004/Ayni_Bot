@@ -2,105 +2,124 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>AYNI-BOT | Proyecto 36458</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AYNI-BOT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>AYNI-BOT</h1>
-        <h2>Proyecto N° 36458</h2>
-        <p>Sistema Robótico Flotante para Monitoreo Inteligente de Calidad del Agua</p>
+        <div class="header-box">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div>
+                <h1>AYNI-BOT</h1>
+                <p>Sistema Robótico Flotante para Monitoreo Inteligente de Calidad del Agua</p>
+            </div>
+        </div>
     </header>
 
-    <section class="integrantes">
-        <h3>Integrantes</h3>
-        <p>Sebastián Caiza</p>
-        <p>Integrante 2</p>
-        <p>Integrante 3</p>
+    <section class="equipo">
+        <h3 class="titulo">Grupo de Desarrolladores</h3>
+        <div class="equipo-box">
+            <div class="persona">
+                <h4>Sebastián Caiza</h4>
+                <p>Desarrollador</p>
+            </div>
+            <div class="persona">
+                <h4>Mao Jaramillo</h4>
+                <p>maao.jaramillo@est.ucacue.edu.ec</p>
+            </div>
+            <div class="persona">
+                <h4>Carlos Reinoso</h4>
+                <p>jose.reinoso@est.ucacue.edu.ec</p>
+            </div>
+        </div>
+
+        <h3 class="titulo" style="margin-top: 60px;">Docentes</h3>
+        <div class="equipo-box">
+            <div class="persona">
+                <h4>Ing. Juan Pazmiño</h4>
+                <p>Docente</p>
+            </div>
+            <div class="persona">
+                <h4>Dora Elizabeth Jimenez Rivas</h4>
+                <p>djimenezr@ucacue.edu.ec</p>
+            </div>
+        </div>
     </section>
 
-    <section class="imagenes">
-        <h3>Galería del Proyecto</h3>
-        <img src="robot.jpg" alt="Robot AYNI-BOT">
-        <img src="sensores.jpg" alt="Sensores del sistema">
-        <img src="plataforma.jpg" alt="Plataforma flotante">
+    <section class="cards-section">
+        <h3 class="titulo">Galería del Proyecto</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="robot.jpeg" alt="Robot AYNI-BOT">
+                <h3>Robot AYNI-BOT</h3>
+            </div>
+            <div class="card">
+                <img src="PH.jpeg" alt="Sensores del sistema">
+                <h3>Sensores</h3>
+            </div>
+            <div class="card">
+                <img src="equipo.jpeg" alt="Equipo de trabajo">
+                <h3>Equipo</h3>
+            </div>
+        </div>
     </section>
 
-    <section class="info">
-        <h3>Descripción Técnica</h3>
-        <p>
+    <section class="info" style="padding: 40px 8%;">
+        <h3 class="titulo">Descripción Técnica</h3>
+        <p style="text-align: center; margin-bottom: 40px; font-size: 1.2rem;">
             AYNI-BOT es un sistema robótico flotante diseñado para el monitoreo continuo
             de parámetros fisicoquímicos del agua en tiempo real. El sistema integra
             sensores especializados, procesamiento embebido y transmisión IoT.
         </p>
 
-        <h4>Arquitectura del Sistema</h4>
-
-        <h5>Módulo de Sensado</h5>
-        <ul>
-            <li>Sensor de pH</li>
-            <li>Sensor de Cloro</li>
-            <li>Sensor TDS</li>
-            <li>Sensor de Turbidez</li>
-            <li>Sensor de Temperatura</li>
-        </ul>
-
-        <h5>Módulo de Procesamiento</h5>
-        <ul>
-            <li>Microcontrolador embebido</li>
-            <li>Conversión ADC</li>
-            <li>Filtrado de señal</li>
-            <li>Calibración y validación de datos</li>
-        </ul>
-
-        <h5>Módulo de Comunicación</h5>
-        <ul>
-            <li>Transmisión IoT en tiempo real</li>
-            <li>Envío estructurado de datos</li>
-            <li>Visualización remota</li>
-        </ul>
-
-        <h5>Sistema Energético</h5>
-        <ul>
-            <li>Panel solar</li>
-            <li>Batería de litio recargable</li>
-            <li>Regulador de carga</li>
-            <li>Optimización energética</li>
-        </ul>
-
-        <h4>Funcionamiento</h4>
-        <ol>
-            <li>El robot flota de forma estable.</li>
-            <li>Los sensores capturan datos periódicamente.</li>
-            <li>El microcontrolador procesa la información.</li>
-            <li>Los datos se transmiten en tiempo real.</li>
-        </ol>
-
-        <h4>Aplicaciones</h4>
-        <ul>
-            <li>Monitoreo ambiental</li>
-            <li>Control de piscinas</li>
-            <li>Gestión hídrica</li>
-            <li>Proyectos educativos STEAM</li>
-        </ul>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+            <div>
+                <h4 style="color: #00d9ff; margin-bottom: 10px;">Módulo de Sensado</h4>
+                <ul>
+                    <li>Sensor de pH</li>
+                    <li>Sensor de Cloro</li>
+                    <li>Sensor TDS</li>
+                    <li>Sensor de Turbidez</li>
+                    <li>Sensor de Temperatura</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #00d9ff; margin-bottom: 10px;">Módulo de Procesamiento</h4>
+                <ul>
+                    <li>Microcontrolador embebido</li>
+                    <li>Conversión ADC</li>
+                    <li>Filtrado de señal</li>
+                    <li>Calibración y validación de datos</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #00d9ff; margin-bottom: 10px;">Sistema Energético</h4>
+                <ul>
+                    <li>Panel solar</li>
+                    <li>Batería de litio recargable</li>
+                    <li>Regulador de carga</li>
+                    <li>Optimización energética</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section class="beneficios">
-        <h3>Beneficios de AYNI-BOT</h3>
-        <ul>
-            <li>Monitoreo continuo 24/7</li>
-            <li>Datos en tiempo real</li>
-            <li>Reducción de inspecciones manuales</li>
-            <li>Mayor precisión en control de calidad</li>
-            <li>Sistema energéticamente autónomo</li>
-            <li>Escalable para futuras mejoras</li>
-        </ul>
+    <section class="redes">
+        <h3 class="titulo">Síguenos en Redes</h3>
+        <div class="redes-box">
+            <a href="https://www.instagram.com/ayni_bot_ucacue?igsh=ZmViOTNwbHl3NWtw" target="_blank" class="instagram">
+                Instagram
+            </a>
+            <a href="https://vt.tiktok.com/ZS9gX91KE/" target="_blank" class="tiktok">
+                TikTok
+            </a>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 AYNI-BOT | Proyecto N° 36458</p>
+    <footer style="text-align: center; padding: 20px; background: #02101d; border-top: 2px solid #00d9ff;">
+        <p>© 2026 AYNI-BOT</p>
     </footer>
 
 </body>
