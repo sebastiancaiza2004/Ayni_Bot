@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>AYNI-BOT | Monitoreo Inteligente del Agua</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -73,6 +76,7 @@ header{
     background:
     linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
     url('robot.jpeg');
+
     background-size:cover;
     background-position:center;
 }
@@ -262,24 +266,108 @@ section{
 
 .nombres-box{
     background:#111827;
-    padding:40px;
+    padding:50px;
     border-radius:25px;
-    line-height:2;
     margin-bottom:40px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,212,255,0.1);
 }
 
-.Docentes-highlight{
+.integrante{
+    margin-bottom:25px;
+}
+
+.integrante h3{
     color:#00d4ff;
+    font-size:1.3rem;
+    margin-bottom:5px;
+}
+
+.integrante p{
+    color:#d6d6d6;
+}
+
+.profesor-box{
+    margin-top:30px;
+    padding:20px;
+    border:1px solid rgba(0,212,255,0.3);
+    border-radius:20px;
+    background:#0f172a;
+}
+
+.profesor-box h3{
+    color:#00d4ff;
+    margin-bottom:8px;
+}
+
+.profesor-box p{
+    color:white;
 }
 
 .foto-reducida{
     display:flex;
     justify-content:center;
+    align-items:center;
 }
 
 .foto-reducida img{
-    width:80%;
+    width:85%;
+    max-width:900px;
     border-radius:25px;
+    box-shadow:0 0 40px rgba(0,212,255,0.25);
+    transition:0.4s;
+}
+
+.foto-reducida img:hover{
+    transform:scale(1.02);
+}
+
+/* ========================= */
+/* REDES */
+/* ========================= */
+
+.redes-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.redes-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.red-social{
+    width:300px;
+    padding:35px;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.4s;
+    background:#111827;
+    box-shadow:0 0 25px rgba(0,212,255,0.12);
+}
+
+.red-social:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.red-social h3{
+    font-size:1.7rem;
+    margin-bottom:10px;
+    color:#00d4ff;
+}
+
+.red-social p{
+    color:#d6d6d6;
+}
+
+.instagram{
+    border:1px solid rgba(255,0,150,0.4);
+}
+
+.tiktok{
+    border:1px solid rgba(0,255,255,0.4);
 }
 
 /* ========================= */
@@ -313,42 +401,45 @@ footer{
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <div class="header-container">
 
-        <img src="logo.png" class="logo-u">
+<div class="header-container">
 
-        <div class="header-text">
-            <h2>Universidad Católica de Cuenca</h2>
-            <p>Ingeniería en Robótica e Inteligencia Artificial</p>
-        </div>
+<img src="logo.png" class="logo-u">
 
-    </div>
+<div class="header-text">
+<h2>Universidad Católica de Cuenca</h2>
+<p>Ingeniería en Robótica e Inteligencia Artificial</p>
+</div>
+
+</div>
+
 </header>
 
 <!-- HERO -->
 
 <section class="hero-central">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <p class="tag-vanguardia">
-            Investigación Científica y Robótica Ambiental
-        </p>
+<p class="tag-vanguardia">
+Investigación Científica y Robótica Ambiental
+</p>
 
-        <h1 class="titulo-proyecto">
-            AYNI-BOT
-        </h1>
+<h1 class="titulo-proyecto">
+AYNI-BOT
+</h1>
 
-        <p class="id-subtext">
-            Tecnología Robótica Inteligente para el Monitoreo Hídrico en Tiempo Real 💧
-        </p>
+<p class="id-subtext">
+Tecnología Robótica Inteligente para el Monitoreo Hídrico en Tiempo Real 💧
+</p>
 
-    </div>
+</div>
 
 </section>
 
@@ -356,23 +447,23 @@ footer{
 
 <section class="concepto-section">
 
-    <div class="container-narrow">
+<div class="container-narrow">
 
-        <div class="concepto-card">
+<div class="concepto-card">
 
-            <h2>Concepto General</h2>
+<h2>Concepto General</h2>
 
-            <p>
-                AYNI-BOT es un ecosistema robótico autónomo diseñado para el monitoreo y análisis inteligente de cuerpos hídricos. Integra sensores ambientales, telemetría IoT, geolocalización GNSS y procesamiento distribuido para la captura de datos biogeoquímicos en tiempo real.
-            </p>
+<p>
+AYNI-BOT es un ecosistema robótico autónomo diseñado para el monitoreo y análisis inteligente de cuerpos hídricos. Integra sensores ambientales, telemetría IoT, geolocalización GNSS y procesamiento distribuido para la captura de datos biogeoquímicos en tiempo real.
+</p>
 
-        </div>
+</div>
 
-        <div class="robot-visual">
-            <img src="robot.jpeg" class="img-robot">
-        </div>
+<div class="robot-visual">
+<img src="robot.jpeg" class="img-robot">
+</div>
 
-    </div>
+</div>
 
 </section>
 
@@ -380,53 +471,53 @@ footer{
 
 <section>
 
-    <h2 class="section-title">
-        Arquitectura Técnica del Sistema
-    </h2>
+<h2 class="section-title">
+Arquitectura Técnica del Sistema
+</h2>
 
-    <div class="table-wrapper">
+<div class="table-wrapper">
 
-        <table class="tabla-ingenieria">
+<table class="tabla-ingenieria">
 
-            <thead>
-                <tr>
-                    <th>Capa</th>
-                    <th>Descripción</th>
-                    <th>Función</th>
-                </tr>
-            </thead>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Descripción</th>
+<th>Función</th>
+</tr>
+</thead>
 
-            <tbody>
+<tbody>
 
-                <tr>
-                    <td>Procesamiento Central</td>
-                    <td>Arquitectura multicore ESP32</td>
-                    <td>Gestión de sensores y comunicación</td>
-                </tr>
+<tr>
+<td>Procesamiento Central</td>
+<td>Arquitectura multicore ESP32</td>
+<td>Gestión de sensores y comunicación</td>
+</tr>
 
-                <tr>
-                    <td>Instrumentación</td>
-                    <td>Sensores químicos industriales</td>
-                    <td>Lectura de parámetros hídricos</td>
-                </tr>
+<tr>
+<td>Instrumentación</td>
+<td>Sensores químicos industriales</td>
+<td>Lectura de parámetros hídricos</td>
+</tr>
 
-                <tr>
-                    <td>Geolocalización</td>
-                    <td>Módulo GNSS/GPS</td>
-                    <td>Ubicación precisa de muestras</td>
-                </tr>
+<tr>
+<td>Geolocalización</td>
+<td>Módulo GNSS/GPS</td>
+<td>Ubicación precisa de muestras</td>
+</tr>
 
-                <tr>
-                    <td>Telemetría</td>
-                    <td>IoT Cloud + MQTT</td>
-                    <td>Transmisión de datos en tiempo real</td>
-                </tr>
+<tr>
+<td>Telemetría</td>
+<td>IoT Cloud + MQTT</td>
+<td>Transmisión de datos en tiempo real</td>
+</tr>
 
-            </tbody>
+</tbody>
 
-        </table>
+</table>
 
-    </div>
+</div>
 
 </section>
 
@@ -473,6 +564,7 @@ ODS y Sostenibilidad
 </div>
 
 </div>
+
 </section>
 
 <!-- PARAMETROS -->
@@ -547,31 +639,76 @@ Equipo Investigador
 
 <div class="nombres-box">
 
-<p><strong>Sebastián Caiza</strong> — sebastian.caiza@est.ucacue.edu.ec</p>
+<div class="integrante">
+<h3>Sebastián Caiza</h3>
+<p>sebastian.caiza@est.ucacue.edu.ec</p>
+</div>
 
-<p><strong>John Macas</strong> — john.macas@est.ucacue.edu.ec</p>
+<div class="integrante">
+<h3>John Macas</h3>
+<p>john.macas@est.ucacue.edu.ec</p>
+</div>
 
-<p><strong>Ginevra Gonzalez</strong> — ginevra.gonzalez@est.ucacue.edu.ec</p>
+<div class="integrante">
+<h3>Ginevra Gonzalez</h3>
+<p>ginevra.gonzalez@est.ucacue.edu.ec</p>
+</div>
 
-<p><strong>Mao Jaramillo</strong> — mao.jaramilloz@est.ucacue.edu.ec</p>
+<div class="integrante">
+<h3>Mao Jaramillo</h3>
+<p>mao.jaramilloz@est.ucacue.edu.ec</p>
+</div>
 
-<p><strong>Carlos Reinoso</strong> — jose.reinoso@est.ucacue.edu.ec</p>
+<div class="integrante">
+<h3>Carlos Reinoso</h3>
+<p>jose.reinoso@est.ucacue.edu.ec</p>
+</div>
 
-<br>
+<div class="profesor-box">
+<h3>Ing. Juan Pablo Pazmiño Piedra</h3>
+<p>juan.pazmino@ucacue.edu.ec</p>
+</div>
 
-<p class="Docentes-highlight">
-<strong>Ing. Juan Pablo Pazmiño Piedra</strong>— juan.pazmino@ucacue.edu.ec
-</p>
-
-<p class="Docentes-highlight">
-<strong>Ing. Dora Elizabeth Jiménez Rivas</strong>— djimenezr@ucacue.edu.ec
-</p>
+<div class="profesor-box">
+<h3>Ing. Dora Elizabeth Jiménez Rivas</h3>
+<p>djimenezr@ucacue.edu.ec</p>
+</div>
 
 </div>
 
 <div class="foto-reducida">
-
 <img src="foto_equipo.jpeg">
+</div>
+
+</section>
+
+<!-- REDES -->
+
+<section class="redes-section">
+
+<h2 class="section-title">
+Síguenos en Nuestras Redes
+</h2>
+
+<div class="redes-container">
+
+<a href="https://www.instagram.com/ayni_bot_ucacue?igsh=ZmViOTNwbHl3NWtw"
+target="_blank"
+class="red-social instagram">
+
+<h3>Instagram</h3>
+<p>@ayni_bot_ucacue</p>
+
+</a>
+
+<a href="https://vt.tiktok.com/ZS9gX91KE/"
+target="_blank"
+class="red-social tiktok">
+
+<h3>TikTok</h3>
+<p>@AYNI-BOT</p>
+
+</a>
 
 </div>
 
