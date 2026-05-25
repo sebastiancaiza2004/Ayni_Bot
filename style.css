@@ -295,61 +295,109 @@ header{
     margin-top:50px;
 }
 
-.red-social{
-    width:320px;
+/* BOTONES */
+
+.social-btn{
+    width:340px;
+    height:170px;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    padding:25px;
-
-    border-radius:25px;
-
     text-decoration:none;
 
-    font-size:1.2rem;
-    font-weight:600;
-
-    color:white;
+    border-radius:28px;
 
     transition:0.4s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* EFECTO */
+
+.social-btn::before{
+    content:"";
+
+    position:absolute;
+
+    width:200%;
+    height:200%;
+
+    background:rgba(255,255,255,0.08);
+
+    transform:rotate(25deg);
+
+    left:-120%;
+    top:-50%;
+
+    transition:0.6s;
+}
+
+.social-btn:hover::before{
+    left:100%;
+}
+
+/* CONTENIDO */
+
+.social-content{
+    position:relative;
+    z-index:2;
+}
+
+.social-content h3{
+    color:white;
+    font-size:2rem;
+    margin-bottom:12px;
+}
+
+.social-content p{
+    color:white;
+    font-size:1.1rem;
 }
 
 /* INSTAGRAM */
 
-.instagram{
+.instagram-btn{
     background:linear-gradient(
         135deg,
         #833ab4,
         #fd1d1d,
         #fcb045
     );
-}
-
-.instagram:hover{
-    transform:translateY(-10px);
 
     box-shadow:
-    0 0 25px #ff4bd8,
-    0 0 50px rgba(255,75,216,0.4);
+    0 0 30px rgba(255,0,128,0.35);
+}
+
+.instagram-btn:hover{
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:
+    0 0 40px #ff0080,
+    0 0 80px rgba(255,0,128,0.4);
 }
 
 /* TIKTOK */
 
-.tiktok{
+.tiktok-btn{
     background:linear-gradient(
         135deg,
         #00f2ff,
         #000000,
         #ff0050
     );
-}
-
-.tiktok:hover{
-    transform:translateY(-10px);
 
     box-shadow:
-    0 0 25px #00f2ff,
-    0 0 50px rgba(0,242,255,0.4);
+    0 0 30px rgba(0,242,255,0.35);
+}
+
+.tiktok-btn:hover{
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:
+    0 0 40px #00f2ff,
+    0 0 80px rgba(0,242,255,0.4);
 }
