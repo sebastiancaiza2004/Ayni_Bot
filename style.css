@@ -1,268 +1,104 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ===== AYNI-BOT - Proyecto 36458 ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#07111f;
-    font-family:'Poppins',sans-serif;
-    color:white;
+body {
+    background: linear-gradient(135deg, #0a0f1c, #05070d);
+    font-family: Arial, sans-serif;
+    color: #e0f7ff;
 }
 
 /* HEADER */
 
-header{
-    padding:20px 8%;
-    background:#02101d;
-    border-bottom:2px solid #00d9ff;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #001f3f;
+    border-bottom: 3px solid #00eaff;
 }
 
-.logo-box{
-    display:flex;
-    align-items:center;
-    gap:20px;
+header h1 {
+    font-size: 3rem;
+    color: #00eaff;
 }
 
-.logo{
-    width:80px;
+header h2 {
+    margin-top: 10px;
+    color: #66f7ff;
 }
 
-/* HERO */
-
-.hero{
-    height:70vh;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
+header p {
+    margin-top: 10px;
 }
 
-.hero h1{
-    font-size:6rem;
-    color:#00d9ff;
-}
+/* SECCIONES */
 
-.hero p{
-    font-size:1.4rem;
-    margin-top:20px;
-}
-
-/* ROBOT */
-
-.robot-section{
-    padding:80px 8%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    gap:60px;
-
-    flex-wrap:wrap;
-}
-
-.robot-img{
-    width:420px;
-
-    border-radius:20px;
-
-    border:3px solid #00d9ff;
-}
-
-.robot-info{
-    max-width:600px;
-    line-height:1.9;
+section {
+    width: 85%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #111a2e;
+    border-radius: 10px;
+    border: 1px solid #00eaff;
 }
 
 /* TITULOS */
 
-.titulo{
-    text-align:center;
-    font-size:3rem;
-    margin-bottom:50px;
-    color:#00d9ff;
+h3 {
+    margin-bottom: 15px;
+    color: #00ffff;
 }
 
-/* CARDS */
-
-.cards{
-    padding:0 8%;
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
+h4 {
+    margin-top: 20px;
+    color: #66f7ff;
 }
 
-.card{
-    background:#0d1c2f;
-
-    padding:25px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    border:2px solid #00d9ff;
-
-    transition:0.4s;
+h5 {
+    margin-top: 15px;
+    color: #99ffff;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+/* INTEGRANTES (ESPACIO REDUCIDO) */
+
+.integrantes p {
+    margin: 4px 0;
 }
 
-.card img{
-    width:100%;
-    height:220px;
+/* LISTAS */
 
-    object-fit:cover;
-
-    border-radius:15px;
-
-    margin-bottom:20px;
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-.card h3{
-    color:#00d9ff;
-    margin-bottom:15px;
+li {
+    margin-bottom: 5px;
 }
 
-/* BENEFICIOS */
+/* IMÁGENES */
 
-.beneficios{
-    padding:0 8%;
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-
-    margin-bottom:80px;
+.imagenes {
+    text-align: center;
 }
 
-.beneficio{
-    background:#0d1c2f;
-
-    padding:35px;
-
-    border-radius:18px;
-
-    text-align:center;
-
-    border:2px solid #00d9ff;
+.imagenes img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #00eaff;
 }
 
-/* EQUIPO */
+/* FOOTER */
 
-.equipo{
-    display:flex;
-
-    justify-content:center;
-
-    gap:40px;
-
-    flex-wrap:wrap;
-
-    padding:0 8%;
-}
-
-.equipo-card{
-    width:400px;
-
-    background:#0d1c2f;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    border:2px solid #00d9ff;
-}
-
-.equipo-card h3{
-    color:#00d9ff;
-
-    margin-bottom:25px;
-
-    text-align:center;
-}
-
-.equipo-card p{
-    margin-bottom:12px;
-}
-
-/* FOTO */
-
-.foto-box{
-    text-align:center;
-    margin-top:50px;
-}
-
-.foto-equipo{
-    width:45%;
-
-    border-radius:20px;
-
-    border:3px solid #00d9ff;
-}
-
-/* REDES */
-
-.redes{
-    margin-top:40px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:40px;
-
-    flex-wrap:wrap;
-
-    padding-bottom:100px;
-}
-
-.instagram,
-.tiktok{
-    width:300px;
-    height:140px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-decoration:none;
-
-    font-size:2rem;
-    font-weight:bold;
-
-    color:white;
-
-    border-radius:20px;
-
-    transition:0.4s;
-}
-
-.instagram{
-    background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
-}
-
-.tiktok{
-    background:linear-gradient(135deg,#00f2ff,#000,#ff0050);
-}
-
-.instagram:hover,
-.tiktok:hover{
-    transform:scale(1.05);
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000814;
+    border-top: 2px solid #00eaff;
+    margin-top: 40px;
 }
