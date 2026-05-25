@@ -1,104 +1,258 @@
-/* ===== AYNI-BOT - Proyecto 36458 ===== */
+/* =========================================
+   AYNI-BOT | PROYECTO 36458
+   ESTILO FUTURISTA
+========================================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background: linear-gradient(135deg, #0a0f1c, #05070d);
-    font-family: Arial, sans-serif;
-    color: #e0f7ff;
+body{
+    background:linear-gradient(135deg,#020617,#071426,#0a1f33);
+    font-family:Arial,sans-serif;
+    color:white;
+    overflow-x:hidden;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: #001f3f;
-    border-bottom: 3px solid #00eaff;
+header{
+    background:linear-gradient(90deg,#001427,#012a4a);
+    padding:40px 20px;
+    text-align:center;
+    border-bottom:3px solid #00eaff;
+    box-shadow:0 0 25px #00eaff;
 }
 
-header h1 {
-    font-size: 3rem;
-    color: #00eaff;
+header h1{
+    font-size:4rem;
+    color:#00eaff;
+    letter-spacing:3px;
+    margin-bottom:10px;
+    text-shadow:0 0 20px #00eaff;
 }
 
-header h2 {
-    margin-top: 10px;
-    color: #66f7ff;
+header h2{
+    color:#7df9ff;
+    font-size:1.5rem;
+    margin-bottom:10px;
 }
 
-header p {
-    margin-top: 10px;
+header p{
+    color:#d6faff;
+    font-size:1rem;
 }
 
-/* SECCIONES */
+/* ===== LOGO ===== */
 
-section {
-    width: 85%;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: #111a2e;
-    border-radius: 10px;
-    border: 1px solid #00eaff;
+.logo-container{
+    position:absolute;
+    top:20px;
+    left:20px;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-/* TITULOS */
-
-h3 {
-    margin-bottom: 15px;
-    color: #00ffff;
+.logo-container img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    border:2px solid #00eaff;
+    box-shadow:0 0 15px #00eaff;
 }
 
-h4 {
-    margin-top: 20px;
-    color: #66f7ff;
+.logo-container h3{
+    color:white;
+    font-size:1rem;
 }
 
-h5 {
-    margin-top: 15px;
-    color: #99ffff;
+/* ===== SECCIONES ===== */
+
+section{
+    width:90%;
+    margin:35px auto;
+    padding:30px;
+    background:rgba(8,20,40,0.85);
+    border-radius:15px;
+    border:1px solid #00eaff;
+    box-shadow:0 0 20px rgba(0,234,255,0.2);
+    transition:0.4s;
 }
 
-/* INTEGRANTES (ESPACIO REDUCIDO) */
-
-.integrantes p {
-    margin: 4px 0;
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 30px rgba(0,234,255,0.6);
 }
 
-/* LISTAS */
+/* ===== TITULOS ===== */
 
-ul, ol {
-    margin-left: 20px;
-    margin-top: 10px;
+h2{
+    color:#00eaff;
+    margin-bottom:20px;
+    font-size:2rem;
+    border-bottom:2px solid #00eaff;
+    padding-bottom:10px;
 }
 
-li {
-    margin-bottom: 5px;
+h3{
+    color:#7df9ff;
+    margin-bottom:10px;
 }
 
-/* IMÁGENES */
-
-.imagenes {
-    text-align: center;
+h4{
+    color:#9ffcff;
+    margin-top:20px;
+    margin-bottom:10px;
 }
 
-.imagenes img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 8px;
-    border: 2px solid #00eaff;
+/* ===== TEXTO ===== */
+
+p{
+    line-height:1.7;
+    color:#dcefff;
 }
 
-/* FOOTER */
+/* ===== LISTAS ===== */
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #000814;
-    border-top: 2px solid #00eaff;
-    margin-top: 40px;
+ul,ol{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:8px;
+    color:#e8f9ff;
+}
+
+/* ===== TARJETAS ===== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+
+.card{
+    background:#101d35;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #00eaff;
+    text-align:center;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 25px #00eaff;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:15px;
+    border:2px solid #00eaff;
+}
+
+/* ===== IMAGEN ROBOT ===== */
+
+.robot{
+    text-align:center;
+}
+
+.robot img{
+    width:80%;
+    max-width:700px;
+    border-radius:20px;
+    border:3px solid #00eaff;
+    box-shadow:0 0 30px #00eaff;
+    margin-top:20px;
+}
+
+/* ===== INVESTIGADORES ===== */
+
+.investigadores{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.persona{
+    background:#101b2f;
+    padding:18px;
+    border-radius:12px;
+    border-left:4px solid #00eaff;
+    transition:0.3s;
+}
+
+.persona:hover{
+    transform:translateX(5px);
+    box-shadow:0 0 20px rgba(0,234,255,0.5);
+}
+
+.persona h3{
+    color:white;
+    margin-bottom:5px;
+}
+
+.persona p{
+    color:#9fefff;
+    font-size:0.95rem;
+}
+
+/* ===== BENEFICIOS ===== */
+
+.beneficios{
+    background:linear-gradient(135deg,#001d3d,#003566);
+}
+
+.beneficios li{
+    margin-bottom:10px;
+}
+
+/* ===== CONTACTO ===== */
+
+.contacto{
+    text-align:center;
+}
+
+.contacto p{
+    font-size:1.1rem;
+    color:#7df9ff;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    background:#000814;
+    border-top:2px solid #00eaff;
+    color:#8fefff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    .logo-container{
+        position:relative;
+        justify-content:center;
+        margin-bottom:20px;
+    }
+
+    .robot img{
+        width:100%;
+    }
+
 }
