@@ -1,518 +1,57 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AYNI-BOT | Monitoreo Inteligente del Agua</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<!-- ========================= -->
-<!-- HEADER -->
-<!-- ========================= -->
-
-<header>
-
-    <div class="header-container">
-
-        <img src="logo.png" class="logo-u" alt="Logo UCACUE">
-
-        <div class="header-text">
-
-            <h2>Universidad Católica de Cuenca</h2>
-
-            <p>Ingeniería en Robótica e Inteligencia Artificial</p>
-
-        </div>
-
-    </div>
-
-</header>
-
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
-
-<section class="hero-central">
-
-    <div class="hero-content">
-
-        <p class="tag-vanguardia">
-            Investigación Científica y Robótica Ambiental
-        </p>
-
-        <h1 class="titulo-proyecto">
-            AYNI-BOT
-        </h1>
-
-        <p class="id-subtext">
-            Tecnología Robótica Inteligente para el Monitoreo Hídrico en Tiempo Real 💧
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- CONCEPTO -->
-<!-- ========================= -->
-
-<section class="concepto-section">
-
-    <div class="container-narrow">
-
-        <div class="concepto-card">
-
-            <h2>Concepto General</h2>
-
-            <p>
-                AYNI-BOT es un ecosistema robótico autónomo diseñado para el monitoreo y análisis inteligente de cuerpos hídricos. Integra sensores ambientales, telemetría IoT, geolocalización GNSS y procesamiento distribuido para la captura de datos biogeoquímicos en tiempo real.
-            </p>
-
-        </div>
-
-        <div class="robot-visual">
-
-            <img src="robot.jpeg" class="img-robot" alt="Robot AYNI-BOT">
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- TABLA -->
-<!-- ========================= -->
-
-<section>
-
-    <h2 class="section-title">
-        Arquitectura Técnica del Sistema
-    </h2>
-
-    <div class="table-wrapper">
-
-        <table class="tabla-ingenieria">
-
-            <thead>
-
-                <tr>
-
-                    <th>Capa</th>
-                    <th>Descripción</th>
-                    <th>Función</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-
-                    <td>Procesamiento Central</td>
-                    <td>Arquitectura multicore ESP32</td>
-                    <td>Gestión de sensores y comunicación</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Instrumentación</td>
-                    <td>Sensores químicos industriales</td>
-                    <td>Lectura de parámetros hídricos</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Geolocalización</td>
-                    <td>Módulo GNSS/GPS</td>
-                    <td>Ubicación precisa de muestras</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Telemetría</td>
-                    <td>IoT Cloud + MQTT</td>
-                    <td>Transmisión de datos en tiempo real</td>
-
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- ODS -->
-<!-- ========================= -->
-
-<section class="ods-section">
-
-    <h2 class="section-title">
-        ODS y Sostenibilidad
-    </h2>
-
-    <div class="ods-grid">
-
-        <div class="ods-card">
-
-            <div class="ods-header">
-
-                <span>6</span>
-
-                <h4>Agua Limpia</h4>
-
-            </div>
-
-            <p>
-                Monitoreo y protección sostenible del agua.
-            </p>
-
-        </div>
-
-        <div class="ods-card">
-
-            <div class="ods-header">
-
-                <span>9</span>
-
-                <h4>Innovación</h4>
-
-            </div>
-
-            <p>
-                Tecnología aplicada a la ingeniería ambiental.
-            </p>
-
-        </div>
-
-        <div class="ods-card">
-
-            <div class="ods-header">
-
-                <span>11</span>
-
-                <h4>Sostenibilidad</h4>
-
-            </div>
-
-            <p>
-                Protección de ecosistemas y comunidades.
-            </p>
-
-        </div>
-
-        <div class="ods-card">
-
-            <div class="ods-header">
-
-                <span>13</span>
-
-                <h4>Acción Climática</h4>
-
-            </div>
-
-            <p>
-                Prevención y monitoreo ambiental inteligente.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- PARAMETROS -->
-<!-- ========================= -->
-
-<section class="parametros-section">
-
-    <h2 class="section-title">
-        Parámetros de Monitoreo
-    </h2>
-
-    <div class="grid-tarjetas">
-
-        <div class="card">
-
-            <img src="PH.jpeg">
-
-            <div class="card-txt">
-
-                <h3>pH</h3>
-
-                <p>
-                    Nivel de acidez o alcalinidad del agua.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="tds.jpeg">
-
-            <div class="card-txt">
-
-                <h3>TDS</h3>
-
-                <p>
-                    Sólidos totales disueltos.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="conductividad.png">
-
-            <div class="card-txt">
-
-                <h3>Conductividad</h3>
-
-                <p>
-                    Capacidad iónica del agua.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="salinidad.jpeg">
-
-            <div class="card-txt">
-
-                <h3>Salinidad</h3>
-
-                <p>
-                    Concentración de sales minerales.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="nitratos.jpeg">
-
-            <div class="card-txt">
-
-                <h3>Nitratos</h3>
-
-                <p>
-                    Detección de contaminantes agrícolas.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="gps.jpeg">
-
-            <div class="card-txt">
-
-                <h3>GPS/GNSS</h3>
-
-                <p>
-                    Geolocalización precisa de muestras.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
 <!-- EQUIPO -->
-<!-- ========================= -->
 
 <section class="equipo-section">
 
-    <div class="equipo-container">
+<h2 class="section-title">
+Equipo Investigador
+</h2>
 
-        <h2 class="section-title">
-            Equipo Investigador
-        </h2>
+<div class="nombres-box">
 
-        <div class="equipo-grid">
+<div class="integrante">
+<h3>Sebastián Caiza</h3>
+<p>sebastian.caiza@est.ucacue.edu.ec</p>
+</div>
 
-            <div class="miembro-card">
+<div class="integrante">
+<h3>John Macas</h3>
+<p>john.macas@est.ucacue.edu.ec</p>
+</div>
 
-                <h3>Sebastián Caiza</h3>
+<div class="integrante">
+<h3>Ginevra Gonzalez</h3>
+<p>ginevra.gonzalez@est.ucacue.edu.ec</p>
+</div>
 
-                <p>
-                    sebastian.caiza@est.ucacue.edu.ec
-                </p>
+<div class="integrante">
+<h3>Mao Jaramillo</h3>
+<p>mao.jaramilloz@est.ucacue.edu.ec</p>
+</div>
 
-            </div>
+<div class="integrante">
+<h3>Carlos Reinoso</h3>
+<p>jose.reinoso@est.ucacue.edu.ec</p>
+</div>
 
-            <div class="miembro-card">
+<br>
 
-                <h3>John Macas</h3>
+<div class="profesor-box">
+<h3>Ing. Juan Pablo Pazmiño Piedra</h3>
+<p>juan.pazmino@ucacue.edu.ec</p>
+</div>
 
-                <p>
-                    john.macas@est.ucacue.edu.ec
-                </p>
+<div class="profesor-box">
+<h3>Ing. Dora Elizabeth Jiménez Rivas</h3>
+<p>djimenezr@ucacue.edu.ec</p>
+</div>
 
-            </div>
+</div>
 
-            <div class="miembro-card">
+<div class="foto-reducida">
 
-                <h3>Ginevra Gonzalez</h3>
+<img src="foto_equipo.jpeg" alt="Equipo Investigador">
 
-                <p>
-                    ginevra.gonzalez@est.ucacue.edu.ec
-                </p>
-
-            </div>
-
-            <div class="miembro-card">
-
-                <h3>Mao Jaramillo</h3>
-
-                <p>
-                    mao.jaramilloz@est.ucacue.edu.ec
-                </p>
-
-            </div>
-
-            <div class="miembro-card">
-
-                <h3>Carlos Reinoso</h3>
-
-                <p>
-                    jose.reinoso@est.ucacue.edu.ec
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- DOCENTES -->
-
-        <h2 class="subtitulo-equipo">
-            DOCENTES
-        </h2>
-
-        <div class="equipo-grid">
-
-            <div class="miembro-card docente">
-
-                <h3>Ing. Juan Pablo Pazmiño Piedra</h3>
-
-                <p>
-                    juan.pazmino@ucacue.edu.ec
-                </p>
-
-            </div>
-
-            <div class="miembro-card docente">
-
-                <h3>Ing. Dora Elizabeth Jiménez Rivas</h3>
-
-                <p>
-                    djimenezr@ucacue.edu.ec
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- FOTO -->
-
-        <div class="foto-reducida">
-
-            <img src="foto_equipo.jpeg" alt="Equipo AYNI-BOT">
-
-        </div>
-
-    </div>
+</div>
 
 </section>
-
-<!-- ========================= -->
-<!-- REDES -->
-<!-- ========================= -->
-
-<section class="redes-section">
-
-    <h2 class="redes-title">
-        Síguenos en nuestras redes
-    </h2>
-
-    <div class="redes-container">
-
-        <a href="https://www.instagram.com/ayni_bot_ucacue?igsh=ZmViOTNwbHl3NWtw"
-           target="_blank"
-           class="red-social">
-
-            <h3>Instagram</h3>
-
-            <p>
-                Noticias, avances del proyecto y desarrollo robótico.
-            </p>
-
-        </a>
-
-        <a href="https://vt.tiktok.com/ZS9gX91KE/"
-           target="_blank"
-           class="red-social">
-
-            <h3>TikTok</h3>
-
-            <p>
-                Videos, pruebas, simulaciones y contenido tecnológico.
-            </p>
-
-        </a>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- FOOTER -->
-<!-- ========================= -->
-
-<footer>
-
-    <p>
-        © 2026 AYNI-BOT | Universidad Católica de Cuenca
-    </p>
-
-</footer>
-
-</body>
-
-</html>
-
