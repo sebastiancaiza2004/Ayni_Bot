@@ -187,9 +187,12 @@ header{
     box-shadow:0px 0px 25px #00ffd0;
 }
 
-/* EQUIPO */
+/* ========================= */
+/* EQUIPO INVESTIGADOR */
+/* ========================= */
 
 .equipo-section{
+    width:100%;
     padding:100px 8%;
 }
 
@@ -199,31 +202,45 @@ header{
     align-items:stretch;
     flex-wrap:wrap;
     gap:35px;
-    margin-top:50px;
+    margin-top:40px;
 }
 
-.miembro-card{
+.persona-card{
     width:320px;
+
     background:rgba(255,255,255,0.05);
-    border:1px solid #00e5ff;
-    border-radius:22px;
+
+    border:1px solid rgba(0,229,255,0.4);
+
+    border-radius:25px;
+
     padding:35px 25px;
+
     text-align:center;
+
+    backdrop-filter:blur(10px);
+
     transition:0.4s;
 }
 
-.miembro-card:hover{
+.persona-card:hover{
     transform:translateY(-10px);
-    box-shadow:0px 0px 30px #00e5ff;
+
+    box-shadow:
+    0 0 25px #00e5ff,
+    0 0 50px rgba(0,229,255,0.3);
 }
 
-.miembro-card h3{
+.persona-card h3{
     color:#00e5ff;
+    font-size:1.5rem;
     margin-bottom:15px;
 }
 
-.miembro-card p{
-    line-height:1.8;
+.persona-card p{
+    color:white;
+    font-size:1rem;
+    line-height:1.6;
 }
 
 .docentes-title{
@@ -231,17 +248,108 @@ header{
 }
 
 .docente-card{
-    border:1px solid #00ffd0;
+    border:1px solid rgba(255,0,255,0.4);
 }
 
-/* CONTACTO */
+.docente-card:hover{
+    box-shadow:
+    0 0 25px #ff00ff,
+    0 0 50px rgba(255,0,255,0.3);
+}
 
-.contacto{
+/* FOTO EQUIPO */
+
+.foto-equipo-container{
+    margin-top:70px;
+    text-align:center;
+}
+
+.foto-equipo{
+    width:80%;
+    max-width:900px;
+
+    border-radius:25px;
+
+    border:3px solid #00e5ff;
+
+    box-shadow:
+    0 0 30px rgba(0,229,255,0.4);
+}
+
+/* ========================= */
+/* REDES SOCIALES */
+/* ========================= */
+
+.redes-section{
+    width:100%;
     padding:100px 8%;
     text-align:center;
 }
 
-.contacto p{
-    font-size:1.5rem;
-    color:#00ffd0;
+.redes-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.red-social{
+    width:320px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    text-decoration:none;
+
+    font-size:1.2rem;
+    font-weight:600;
+
+    color:white;
+
+    transition:0.4s;
+}
+
+/* INSTAGRAM */
+
+.instagram{
+    background:linear-gradient(
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+    );
+}
+
+.instagram:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px #ff4bd8,
+    0 0 50px rgba(255,75,216,0.4);
+}
+
+/* TIKTOK */
+
+.tiktok{
+    background:linear-gradient(
+        135deg,
+        #00f2ff,
+        #000000,
+        #ff0050
+    );
+}
+
+.tiktok:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px #00f2ff,
+    0 0 50px rgba(0,242,255,0.4);
 }
