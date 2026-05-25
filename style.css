@@ -1,252 +1,366 @@
-/* --- RESET Y CONFIGURACIÓN BASE --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-body {
-    /* Fondo con degradado radial oscuro */
-    background: radial-gradient(circle at center, #1e3f52 0%, #0d1a21 100%) !important;
-    background-attachment: fixed;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: white;
-    line-height: 1.6;
+body{
+    background:#0b1220;
+    color:white;
+    overflow-x:hidden;
 }
 
-/* --- HEADER: Logo y Nombre Alineados --- */
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 0;
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+    z-index:1000;
 }
 
-.logo-u {
-    width: 70px;
-    height: auto;
+.header-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.header-text h2 {
-    font-size: 1.5rem;
-    margin: 0;
+.logo-u{
+    width:70px;
+    border-radius:12px;
 }
 
-.header-text p {
-    font-size: 0.9rem;
-    opacity: 0.8;
+.header-text h2{
+    font-size:1.5rem;
+    color:#00d4ff;
 }
 
-/* --- HERO CENTRALIZADO --- */
-.hero-central {
-    text-align: center;
-    padding: 60px 20px;
+.header-text p{
+    color:#d6d6d6;
 }
 
-.tag-vanguardia {
-    font-size: 1rem;
-    opacity: 0.8;
-    margin-bottom: 10px;
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero-central{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url('robot.jpeg');
+
+    background-size:cover;
+    background-position:center;
 }
 
-.titulo-proyecto {
-    color: #4dc3ff; /* Azul cian para el título principal */
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 20px;
+.hero-content{
+    max-width:900px;
 }
 
-.id-registro-box {
-    display: inline-block;
-    text-align: center;
+.tag-vanguardia{
+    display:inline-block;
+    padding:10px 25px;
+    background:#00d4ff20;
+    border:1px solid #00d4ff;
+    border-radius:50px;
+    color:#00d4ff;
+    margin-bottom:25px;
 }
 
-.id-text {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 5px;
+.titulo-proyecto{
+    font-size:5rem;
+    margin-bottom:20px;
 }
 
-.id-subtext {
-    font-size: 1.1rem;
-    opacity: 0.9;
+.id-subtext{
+    font-size:1.3rem;
+    color:#d0d0d0;
 }
 
-/* --- CONCEPTO Y ROBOT --- */
-.concepto-card {
-    max-width: 850px;
-    margin: 0 auto 30px;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
-    border-radius: 30px;
-    text-align: center;
-    border: 1px solid rgba(77, 195, 255, 0.2);
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+section{
+    padding:100px 8%;
 }
 
-.img-robot {
-    display: block;
-    margin: 0 auto 50px;
-    width: 280px; /* Tamaño reducido para el robot */
-    border-radius: 25px;
-    border: 3px solid #4dc3ff;
-    box-shadow: 0 0 20px rgba(77, 195, 255, 0.3);
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:60px;
+    color:#00d4ff;
 }
 
-/* --- TABLOTA DE ARQUITECTURA TÉCNICA --- */
-.arquitectura-tabla {
-    max-width: 1000px;
-    margin: 0 auto 60px;
+/* ========================= */
+/* CONCEPTO */
+/* ========================= */
+
+.container-narrow{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
 }
 
-.table-wrapper {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid rgba(77, 195, 255, 0.2);
+.concepto-card{
+    background:#111827;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 0 30px rgba(0,212,255,0.15);
 }
 
-.tabla-ingenieria {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
+.concepto-card h2{
+    margin-bottom:20px;
+    color:#00d4ff;
 }
 
-.tabla-ingenieria th {
-    background: rgba(77, 195, 255, 0.2);
-    color: #4dc3ff;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+.concepto-card p{
+    line-height:1.9;
+    color:#d6d6d6;
 }
 
-.tabla-ingenieria td {
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 0.95rem;
+.img-robot{
+    width:100%;
+    border-radius:25px;
 }
 
-/* --- SECCIÓN ODS (6, 9, 11, 13) --- */
-.section-title {
-    text-align: center;
-    color: #4dc3ff;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* ========================= */
+/* TABLA */
+/* ========================= */
+
+.table-wrapper{
+    overflow-x:auto;
 }
 
-.ods-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    max-width: 1100px;
-    margin: 0 auto 60px;
+.tabla-ingenieria{
+    width:100%;
+    border-collapse:collapse;
+    background:#111827;
+    border-radius:20px;
+    overflow:hidden;
 }
 
-.ods-card {
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+.tabla-ingenieria th{
+    background:#00d4ff;
+    color:black;
+    padding:20px;
 }
 
-.ods-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+.tabla-ingenieria td{
+    padding:18px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-.ods-num {
-    font-size: 2.2rem;
-    font-weight: 900;
-    opacity: 0.6;
+/* ========================= */
+/* ODS */
+/* ========================= */
+
+.ods-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
-.ods-card p {
-    font-size: 0.85rem;
-    line-height: 1.4;
+.ods-card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
 }
 
-/* Colores oficiales de las ODS */
-.ods-6 { background: #26bde2; } 
-.ods-9 { background: #f36d25; } 
-.ods-11 { background: #f99d21; } 
-.ods-13 { background: #3f7e44; } 
-
-/* --- TARJETAS BLANCAS (PARÁMETROS) --- */
-.grid-tarjetas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: 0 auto 60px;
+.ods-card:hover{
+    transform:translateY(-10px);
 }
 
-.card {
-    background: white; /* Tarjetas blancas */
-    border-radius: 25px; /* Bordes redondeados */
-    padding: 25px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+.ods-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
 }
 
-.card img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
+.ods-header span{
+    width:50px;
+    height:50px;
+    background:#00d4ff;
+    color:black;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.card h3 {
-    color: #0076c0; /* Azul de los títulos en tarjetas blancas */
-    margin-bottom: 2px;
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
+.grid-tarjetas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
-/* --- EQUIPO E IMAGEN REDUCIDA --- */
-.nombres-box {
-    max-width: 500px; /* Alineado al tamaño de la foto reducida */
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.card{
+    background:#111827;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
 }
 
-.nombres-box p {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+.card:hover{
+    transform:scale(1.03);
 }
 
-.asesor-highlight {
-    color: #4dc3ff;
-    border-top: 1px dotted rgba(77, 195, 255, 0.5);
-    padding-top: 15px;
-    margin-top: 10px;
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
 }
 
-.foto-reducida {
-    max-width: 500px; /* Tamaño reducido solicitado para la foto de equipo */
-    margin: 0 auto 60px;
-    border: 3px solid #4dc3ff;
-    border-radius: 0 0 20px 20px;
-    overflow: hidden;
+.card-txt{
+    padding:20px;
 }
 
-.foto-reducida img {
-    width: 100%;
-    display: block;
+.card-txt h3{
+    color:#00d4ff;
+    margin-bottom:10px;
 }
 
-/* --- FOOTER --- */
-footer {
-    text-align: center;
-    padding: 50px;
-    opacity: 0.6;
-    font-size: 0.8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+/* ========================= */
+/* EQUIPO */
+/* ========================= */
+
+.equipo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.miembro-card,
+.docente-card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(0,212,255,0.12);
+}
+
+.miembro-card:hover,
+.docente-card:hover{
+    transform:translateY(-8px);
+}
+
+.miembro-card h3,
+.docente-card h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.miembro-card p,
+.docente-card p{
+    color:#d6d6d6;
+}
+
+.foto-reducida{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.foto-reducida img{
+    width:90%;
+    max-width:1000px;
+    border-radius:25px;
+    box-shadow:0 0 40px rgba(0,212,255,0.25);
+}
+
+/* ========================= */
+/* REDES */
+/* ========================= */
+
+.redes-section{
+    text-align:center;
+}
+
+.redes-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.red-social{
+    background:#111827;
+    padding:30px;
+    width:280px;
+    border-radius:20px;
+    text-decoration:none;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(0,212,255,0.12);
+}
+
+.red-social:hover{
+    transform:translateY(-10px);
+}
+
+.red-social h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.red-social p{
+    color:#d6d6d6;
+}
+
+.instagram{
+    border:1px solid #ff2e88;
+}
+
+.tiktok{
+    border:1px solid #00f7ff;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+    background:#050b15;
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:900px){
+
+    .container-narrow{
+        grid-template-columns:1fr;
+    }
+
+    .titulo-proyecto{
+        font-size:3rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
 }
