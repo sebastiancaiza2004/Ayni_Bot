@@ -12,516 +12,142 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#0b1220;
-    color:white;
-    overflow-x:hidden;
-}
-
-/* ========================= */
-/* HEADER */
-/* ========================= */
-
-header{
-    width:100%;
-    padding:20px 8%;
-    background:rgba(0,0,0,0.4);
-    backdrop-filter:blur(10px);
-    position:fixed;
-    top:0;
-    z-index:1000;
-}
-
-.header-container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo-u{
-    width:70px;
-    border-radius:12px;
-}
-
-.header-text h2{
-    font-size:1.5rem;
-    color:#00d4ff;
-}
-
-.header-text p{
-    color:#d6d6d6;
-    font-size:0.9rem;
-}
-
-/* ========================= */
-/* HERO */
-/* ========================= */
-
-.hero-central{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:120px 8%;
-    background:
-    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-    url('robot.jpeg');
-
-    background-size:cover;
-    background-position:center;
-}
-
-.hero-content{
-    max-width:900px;
-}
-
-.tag-vanguardia{
-    display:inline-block;
-    padding:10px 25px;
-    background:#00d4ff20;
-    border:1px solid #00d4ff;
-    border-radius:50px;
-    color:#00d4ff;
-    margin-bottom:25px;
-}
-
-.titulo-proyecto{
-    font-size:5rem;
-    font-weight:700;
-    color:white;
-    margin-bottom:20px;
-}
-
-.id-subtext{
-    font-size:1.3rem;
-    color:#d0d0d0;
-}
-
-/* ========================= */
-/* SECTION GENERAL */
-/* ========================= */
-
-section{
-    padding:100px 8%;
-}
-
-.section-title{
-    text-align:center;
-    font-size:2.8rem;
-    margin-bottom:60px;
-    color:#00d4ff;
-}
-
-/* ========================= */
-/* CONCEPTO */
-/* ========================= */
-
-.container-narrow{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.concepto-card{
-    background:#111827;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 0 30px rgba(0,212,255,0.15);
-}
-
-.concepto-card h2{
-    margin-bottom:20px;
-    color:#00d4ff;
-}
-
-.concepto-card p{
-    line-height:1.9;
-    color:#d6d6d6;
-}
-
-.img-robot{
-    width:100%;
-    border-radius:25px;
-    box-shadow:0 0 40px rgba(0,212,255,0.2);
-}
-
-/* ========================= */
-/* TABLA */
-/* ========================= */
-
-.table-wrapper{
-    overflow-x:auto;
-}
-
-.tabla-ingenieria{
-    width:100%;
-    border-collapse:collapse;
-    background:#111827;
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.tabla-ingenieria th{
-    background:#00d4ff;
-    color:#000;
-    padding:20px;
-}
-
-.tabla-ingenieria td{
-    padding:18px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-    color:#d6d6d6;
-}
-
-/* ========================= */
-/* ODS */
-/* ========================= */
-
-.ods-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.ods-card{
-    background:#111827;
-    padding:30px;
-    border-radius:20px;
-    transition:0.4s;
-}
-
-.ods-card:hover{
-    transform:translateY(-10px);
-}
-
-.ods-header{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-bottom:15px;
-}
-
-.ods-header span{
-    width:50px;
-    height:50px;
-    background:#00d4ff;
-    color:black;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bold;
-}
-
-/* ========================= */
-/* TARJETAS */
-/* ========================= */
-
-.grid-tarjetas{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:#111827;
-    border-radius:20px;
-    overflow:hidden;
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:scale(1.03);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-txt{
-    padding:20px;
-}
-
-.card-txt h3{
-    color:#00d4ff;
-    margin-bottom:10px;
-}
-
-/* ========================= */
-/* EQUIPO */
-/* ========================= */
-
-.nombres-box{
-    background:#111827;
-    padding:50px;
-    border-radius:25px;
-    margin-bottom:40px;
-    text-align:center;
-    box-shadow:0 0 30px rgba(0,212,255,0.1);
-}
-
-.integrante{
-    margin-bottom:25px;
-}
-
-.integrante h3{
-    color:#00d4ff;
-    font-size:1.3rem;
-    margin-bottom:5px;
-}
-
-.integrante p{
-    color:#d6d6d6;
-}
-
-.profesor-box{
-    margin-top:30px;
-    padding:20px;
-    border:1px solid rgba(0,212,255,0.3);
-    border-radius:20px;
-    background:#0f172a;
-}
-
-.profesor-box h3{
-    color:#00d4ff;
-    margin-bottom:8px;
-}
-
-.profesor-box p{
-    color:white;
-}
-
-.foto-reducida{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.foto-reducida img{
-    width:85%;
-    max-width:900px;
-    border-radius:25px;
-    box-shadow:0 0 40px rgba(0,212,255,0.25);
-    transition:0.4s;
-}
-
-.foto-reducida img:hover{
-    transform:scale(1.02);
-}
-
-/* ========================= */
-/* REDES */
-/* ========================= */
-
-.redes-section{
-    padding:80px 8%;
-    text-align:center;
-}
-
-.redes-container{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-.red-social{
-    width:300px;
-    padding:35px;
-    border-radius:25px;
-    text-decoration:none;
-    transition:0.4s;
-    background:#111827;
-    box-shadow:0 0 25px rgba(0,212,255,0.12);
-}
-
-.red-social:hover{
-    transform:translateY(-10px) scale(1.03);
-}
-
-.red-social h3{
-    font-size:1.7rem;
-    margin-bottom:10px;
-    color:#00d4ff;
-}
-
-.red-social p{
-    color:#d6d6d6;
-}
-
-.instagram{
-    border:1px solid rgba(255,0,150,0.4);
-}
-
-.tiktok{
-    border:1px solid rgba(0,255,255,0.4);
-}
-
-/* ========================= */
-/* FOOTER */
-/* ========================= */
-
-footer{
-    background:#050b15;
-    text-align:center;
-    padding:30px;
-    color:#aaa;
-}
-
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
-
-@media(max-width:900px){
-
-    .container-narrow{
-        grid-template-columns:1fr;
-    }
-
-    .titulo-proyecto{
-        font-size:3rem;
-    }
-
-    .section-title{
-        font-size:2rem;
-    }
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
+
 <header>
 
-<div class="header-container">
+    <div class="header-container">
 
-<img src="logo.png" class="logo-u">
+        <img src="logo.png" class="logo-u" alt="Logo">
 
-<div class="header-text">
-<h2>Universidad Católica de Cuenca</h2>
-<p>Ingeniería en Robótica e Inteligencia Artificial</p>
-</div>
+        <div class="header-text">
+            <h2>Universidad Católica de Cuenca</h2>
+            <p>Ingeniería en Robótica e Inteligencia Artificial</p>
+        </div>
 
-</div>
+    </div>
 
 </header>
 
+<!-- ========================= -->
 <!-- HERO -->
+<!-- ========================= -->
 
 <section class="hero-central">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<p class="tag-vanguardia">
-Investigación Científica y Robótica Ambiental
-</p>
+        <p class="tag-vanguardia">
+            Investigación Científica y Robótica Ambiental
+        </p>
 
-<h1 class="titulo-proyecto">
-AYNI-BOT
-</h1>
+        <h1 class="titulo-proyecto">
+            AYNI-BOT
+        </h1>
 
-<p class="id-subtext">
-Tecnología Robótica Inteligente para el Monitoreo Hídrico en Tiempo Real 💧
-</p>
+        <p class="id-subtext">
+            Tecnología Robótica Inteligente para el Monitoreo Hídrico en Tiempo Real 💧
+        </p>
 
-</div>
+    </div>
 
 </section>
 
+<!-- ========================= -->
 <!-- CONCEPTO -->
+<!-- ========================= -->
 
 <section class="concepto-section">
 
-<div class="container-narrow">
+    <div class="container-narrow">
 
-<div class="concepto-card">
+        <div class="concepto-card">
 
-<h2>Concepto General</h2>
+            <h2>Concepto General</h2>
 
-<p>
-AYNI-BOT es un ecosistema robótico autónomo diseñado para el monitoreo y análisis inteligente de cuerpos hídricos. Integra sensores ambientales, telemetría IoT, geolocalización GNSS y procesamiento distribuido para la captura de datos biogeoquímicos en tiempo real.
-</p>
+            <p>
+                AYNI-BOT es un ecosistema robótico autónomo diseñado para el monitoreo y análisis inteligente de cuerpos hídricos. Integra sensores ambientales, telemetría IoT, geolocalización GNSS y procesamiento distribuido para la captura de datos biogeoquímicos en tiempo real.
+            </p>
 
-</div>
+        </div>
 
-<div class="robot-visual">
-<img src="robot.jpeg" class="img-robot">
-</div>
+        <div class="robot-visual">
+            <img src="robot.jpeg" class="img-robot">
+        </div>
 
-</div>
+    </div>
 
 </section>
 
+<!-- ========================= -->
 <!-- TABLA -->
+<!-- ========================= -->
 
 <section>
 
-<h2 class="section-title">
-Arquitectura Técnica del Sistema
-</h2>
+    <h2 class="section-title">
+        Arquitectura Técnica del Sistema
+    </h2>
 
-<div class="table-wrapper">
+    <div class="table-wrapper">
 
-<table class="tabla-ingenieria">
+        <table class="tabla-ingenieria">
 
-<thead>
-<tr>
-<th>Capa</th>
-<th>Descripción</th>
-<th>Función</th>
-</tr>
-</thead>
+            <thead>
 
-<tbody>
+                <tr>
+                    <th>Capa</th>
+                    <th>Descripción</th>
+                    <th>Función</th>
+                </tr>
 
-<tr>
-<td>Procesamiento Central</td>
-<td>Arquitectura multicore ESP32</td>
-<td>Gestión de sensores y comunicación</td>
-</tr>
+            </thead>
 
-<tr>
-<td>Instrumentación</td>
-<td>Sensores químicos industriales</td>
-<td>Lectura de parámetros hídricos</td>
-</tr>
+            <tbody>
 
-<tr>
-<td>Geolocalización</td>
-<td>Módulo GNSS/GPS</td>
-<td>Ubicación precisa de muestras</td>
-</tr>
+                <tr>
+                    <td>Procesamiento Central</td>
+                    <td>Arquitectura multicore ESP32</td>
+                    <td>Gestión de sensores y comunicación</td>
+                </tr>
 
-<tr>
-<td>Telemetría</td>
-<td>IoT Cloud + MQTT</td>
-<td>Transmisión de datos en tiempo real</td>
-</tr>
+                <tr>
+                    <td>Instrumentación</td>
+                    <td>Sensores químicos industriales</td>
+                    <td>Lectura de parámetros hídricos</td>
+                </tr>
 
-</tbody>
+                <tr>
+                    <td>Geolocalización</td>
+                    <td>Módulo GNSS/GPS</td>
+                    <td>Ubicación precisa de muestras</td>
+                </tr>
 
-</table>
+                <tr>
+                    <td>Telemetría</td>
+                    <td>IoT Cloud + MQTT</td>
+                    <td>Transmisión de datos en tiempo real</td>
+                </tr>
 
-</div>
+            </tbody>
+
+        </table>
+
+    </div>
 
 </section>
 
+<!-- ========================= -->
 <!-- ODS -->
+<!-- ========================= -->
 
 <section class="ods-section">
 
@@ -532,42 +158,64 @@ ODS y Sostenibilidad
 <div class="ods-grid">
 
 <div class="ods-card">
+
 <div class="ods-header">
 <span>6</span>
 <h4>Agua Limpia</h4>
 </div>
-<p>Monitoreo y protección sostenible del agua.</p>
+
+<p>
+Monitoreo y protección sostenible del agua.
+</p>
+
 </div>
 
 <div class="ods-card">
+
 <div class="ods-header">
 <span>9</span>
 <h4>Innovación</h4>
 </div>
-<p>Tecnología aplicada a la ingeniería ambiental.</p>
+
+<p>
+Tecnología aplicada a la ingeniería ambiental.
+</p>
+
 </div>
 
 <div class="ods-card">
+
 <div class="ods-header">
 <span>11</span>
 <h4>Sostenibilidad</h4>
 </div>
-<p>Protección de ecosistemas y comunidades.</p>
+
+<p>
+Protección de ecosistemas y comunidades.
+</p>
+
 </div>
 
 <div class="ods-card">
+
 <div class="ods-header">
 <span>13</span>
 <h4>Acción Climática</h4>
 </div>
-<p>Prevención y monitoreo ambiental inteligente.</p>
+
+<p>
+Prevención y monitoreo ambiental inteligente.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- ========================= -->
 <!-- PARAMETROS -->
+<!-- ========================= -->
 
 <section class="parametros-section">
 
@@ -629,7 +277,9 @@ Parámetros de Monitoreo
 
 </section>
 
+<!-- ========================= -->
 <!-- EQUIPO -->
+<!-- ========================= -->
 
 <section class="equipo-section">
 
@@ -637,52 +287,68 @@ Parámetros de Monitoreo
 Equipo Investigador
 </h2>
 
-<div class="nombres-box">
+<div class="equipo-grid">
 
-<div class="integrante">
+<div class="miembro-card">
 <h3>Sebastián Caiza</h3>
 <p>sebastian.caiza@est.ucacue.edu.ec</p>
 </div>
 
-<div class="integrante">
+<div class="miembro-card">
 <h3>John Macas</h3>
 <p>john.macas@est.ucacue.edu.ec</p>
 </div>
 
-<div class="integrante">
+<div class="miembro-card">
 <h3>Ginevra Gonzalez</h3>
 <p>ginevra.gonzalez@est.ucacue.edu.ec</p>
 </div>
 
-<div class="integrante">
+<div class="miembro-card">
 <h3>Mao Jaramillo</h3>
 <p>mao.jaramilloz@est.ucacue.edu.ec</p>
 </div>
 
-<div class="integrante">
+<div class="miembro-card">
 <h3>Carlos Reinoso</h3>
 <p>jose.reinoso@est.ucacue.edu.ec</p>
 </div>
 
-<div class="profesor-box">
+</div>
+
+<br><br>
+
+<h2 class="section-title">
+Docentes
+</h2>
+
+<div class="equipo-grid">
+
+<div class="docente-card">
 <h3>Ing. Juan Pablo Pazmiño Piedra</h3>
 <p>juan.pazmino@ucacue.edu.ec</p>
 </div>
 
-<div class="profesor-box">
+<div class="docente-card">
 <h3>Ing. Dora Elizabeth Jiménez Rivas</h3>
 <p>djimenezr@ucacue.edu.ec</p>
 </div>
 
 </div>
 
+<br><br>
+
 <div class="foto-reducida">
-<img src="foto_equipo.jpeg">
+
+<img src="foto_equipo.jpeg" alt="Equipo AYNI-BOT">
+
 </div>
 
 </section>
 
+<!-- ========================= -->
 <!-- REDES -->
+<!-- ========================= -->
 
 <section class="redes-section">
 
@@ -714,6 +380,10 @@ class="red-social tiktok">
 
 </section>
 
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
 <footer>
 
 <p>
@@ -724,7 +394,5 @@ class="red-social tiktok">
 
 </body>
 </html>
-
-
 
 
